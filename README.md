@@ -1,6 +1,5 @@
 # 📝 Todo App — Spring Boot REST API
 
-A simple, clean **Spring Boot CRUD REST API** for managing todos. Uses an **in-memory ConcurrentHashMap** — no database required.
 
 ---
 
