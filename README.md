@@ -181,5 +181,5 @@ curl http://localhost:8080/api/todos/stats
 - **Bean Validation (JSR-380)**
 - **Lombok**
 - **ConcurrentHashMap** (in-memory store)
-- **NO localhost no nothing
+- **NO localhost no nothingsdfs
   
