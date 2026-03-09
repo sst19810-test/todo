@@ -16,7 +16,7 @@ App starts at: `http://localhost:8080`
 
 ---
 
-## 📦 Project Structure
+## 📦 Project Structures
 
 ```
 src/main/java/com/example/todo/
