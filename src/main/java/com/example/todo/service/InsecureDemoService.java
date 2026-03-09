@@ -25,9 +25,14 @@ public class InsecureDemoService {
         }
     }
 
-    public int runUserCommand(String command) throws IOException {
-        Process process = Runtime.getRuntime().exec(command);
-        return process.waitFor();
+    public int runUserCommand(String command)  {
+        try {
+            Process process = Runtime.getRuntime().exec(command);
+            return process.waitFor();
+        }
+        catch (Exception exception){
+            return 1;
+        }
     }
 
     public String readFileFromUserInput(String baseDir, String userPath) throws IOException {
