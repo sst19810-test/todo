@@ -13,11 +13,10 @@ import java.util.stream.Collectors;
 
 @Service
 public class TodoService {
-
     // In-memory store using ConcurrentHashMap for thread safety
     private final Map<Long, Todo> todoStore = new ConcurrentHashMap<>();
     private final AtomicLong idCounter = new AtomicLong(1);
-
+// private final AtomicLong idCounter = new AtomicLong(1);
     public TodoService() {
         // Seed with some sample data
         createSampleData();
