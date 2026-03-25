@@ -1,4 +1,4 @@
-
+name: Build
 
 on:
   push:
@@ -10,7 +10,7 @@ jobs:
   build:
     name: Build and analyze
     runs-on: ubuntu-latest
-
+    
     steps:
       - uses: actions/checkout@v4
         with:
@@ -36,4 +36,4 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=sst19810-test_todo_074edf2f-4112-46a3-8114-5e873d056d7d -Dsonar.projectName='todo'
+        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=sst19810-test_todo_6fbae542-b29a-4be4-ac86-e9f6d06c20c3 -Dsonar.projectName='todo'
